@@ -17,6 +17,7 @@ body {
     font-family: "Funnel Sans", sans-serif; 
     background-image: url('../img/pngtree-white-acrylic-brush-background-image_320177.jpg'); 
     background-position: center;
+    overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -24,15 +25,15 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 60px;
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 3rem;
 }
 
 .menu {
@@ -64,7 +65,7 @@ min-height: 100vh;
 
 .menu ul {
     list-style: none;
-    display: flex
+    display: flex;
 }
 
 .menu ul li a {
@@ -100,7 +101,7 @@ min-height: 100vh;
 .intro {
 
     position: relative;
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr;
     height: 100vh;
 }
@@ -110,7 +111,7 @@ min-height: 100vh;
 
     position: relative;
     top: -80px;
-    margin-left: -180px;
+    margin-left: 100px;
     display: flex;
     flex-direction: column;
     flex-flow: column wrap;
@@ -147,22 +148,25 @@ min-height: 100vh;
 }
 
 .first_images {
-    margin-top: 270px;
-    display: grid;
+    margin-top: 325px;
+    margin-right: 100px;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 30px;
+
 }
 
 .image {
     width: 100%;
-    height: 500px;
+    height: 225px;
     overflow: visible;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-position: initial;
+    margin-right: 50px;
+    margin-bottom: 100px;
 }
 
 .image img {
+     background-position: initial;
     width: 100%;
     height: auto;
     max-width: 100%;
@@ -202,16 +206,165 @@ min-height: 100vh;
     justify-content: center;
 }
 
+.block {
+    height: 1000px;
+     padding: 25px;
+}
+
+.title h2, p {
+    display: block;
+}
+
 .types {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.paisagens {
-    display: grid;
+.block_relative {
+    display: relative;
+    margin-top: 50px;
 
 }
+
+.para {
+    margin-top: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* ========== GRID LADO A LADO ========== */
+/* ========== GRID LADO A LADO ========== */
+.grid_photos {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+     grid-template-rows: 1fr;
+    height: 500px;
+    flex-direction: row;
+    gap: 12px;
+    height: 600px;
+
+}
+
+.image2 {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+}
+
+.image2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.image3 {
+    grid-column: 2; /* Segunda coluna */
+    grid-row: 1; /* MESMA LINHA que a imagem grande */
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* Duas linhas internas */
+    gap: 10px;
+    height: 100%;
+}
+
+.image3 img {
+    width: 100%;
+    height: 100%; /* Cada imagem ocupa 50% da altura */
+    object-fit: cover;
+    border-radius: 8px;
+
+} 
+
+.grid_photos2 {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+     grid-template-rows: 1fr;
+    height: 500px;
+    flex-direction: row;
+    gap: 12px;
+    height: 600px;
+
+}
+
+.image4 {
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    height: 100%;
+}
+
+.image4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+
+.image5 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.image5 img {
+     width: 100%;
+    height: 100%; /* Cada imagem ocupa 50% da altura */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.grid_photos3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 500px;
+    flex-direction: row;
+    gap: 12px;
+    height: 600px;
+
+}
+
+.image6 {
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    height: 100%;
+}
+
+.image6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.image7 {
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    height: 100%;
+}
+
+.image7 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
 
 
 
