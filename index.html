@@ -11,28 +11,58 @@
 </head>
 <body>
     <!-- SECTION PRINCIPAL CORRIGIDA -->
-    <section class="menu-content">
+    <section class="menu-content" >
         <aside class="menu">
             <div class="menu-header"> <!-- DIV PARA AGRUPAR h1 E p -->
-                <h1>Galeria de fotos</h1>
+                <h3>Galeria de fotos</h3>
             </div>
+
+            <div class="buttons">
             <nav>
                 <ul>
-                    ><li><a href="#">inicio</a></li>
-                    <li><a href="#">explicação</a></li>
-                    <li><a href="#">tipos de galeria</a></li>
+                    <li>
+                   <a href="#inicio">
+                   <div class="link-content">
+                    <img src="assets/img/Sem título.jpg" class="link-icon" alt="ícone">
+                   <span class="link-text">inicio</span>
+                    </div>
+                     </a>
+                       </li>
+                    <li>
+                   <a href="#exp">
+                   <div class="link-content">
+                    <img src="assets/img/90477.png" class="link-icon" alt="ícone">
+                   <span class="link-text">explicação</span>
+                    </div>
+                     </a>
+                       </li>
+                    <li>
+                   <a href="#gallery">
+                   <div class="link-content">
+                    <img src="assets/img/dadd.png" class="link-icon" alt="ícone">
+                   <span class="link-text">Tipos de galeria</span>
+                    </div>
+                     </a>
+                       </li>
                 </ul>
             </nav>
+            </div>
         </aside>
+
 
 <div class="spacement"></div>
   </section>
-   <section class="section">
+   <section class="section" id="inicio">
     <div class="intro">
     <div class="intro_content">
+
+      <div class="titulo">
       <h2> APRENDA A USAR
-        A GALERIA DE FOTOS </h2>     
-        <p> clique nesse botão para entender como funciona </p>
+        A GALERIA DE FOTOS </h2>   
+        </div>  
+
+        <div class="space"><div class="prgrf"><p> clique nesse botão para acessá-lo</div></p> <div class="ocult"><p>clique aqui para acessá-lo</p></div>  <a href="#exp"> </a> <button class="button">Apertar</button></div></a>
+        <button class="button_ocult">Apertar</button>
         </div>
         <div class="first_images">
             <div class="image"><img src="assets/img/png-clipart-black-arrow-illustration-black-white-pattern-arc-arrow-angle-white-thumbnail.png" alt="img"></div>
@@ -41,8 +71,8 @@
 </section>
     <section class="second_form">
 
-    <div class="content_second">
-    <h2>
+    <div class="content_second" id="exp">
+    <h2 id="exp">
         EXPLICAÇÃO
     </h2>
     <p>Essa galaria de fotos é um lugar onde voce pode arranjar tipos de fotos específicos
@@ -51,12 +81,12 @@
     </div>
 
     </section>
-    <section class="three_form">
+    <section class="three_form " id="gallery">
        <div class="content_three">
 
         <h2>
             Tipos de galeria
-        </h>
+        </h2>
 
         </div>
         <div class="types">
@@ -133,6 +163,31 @@
         </div>
 
     </section>
+
+    <div class="contact">
+        <fieldset>
+            <legend class="names">Entre em contato</legend>
+
+            <div class="form-group">
+                <label for="first-name" class="names"> First name</label>
+                <input type="text" name="first-name" id="first-name">
+            </div>
+
+            <div class="form-group">
+                <label for="last-name" class="names"> last name</label>
+                <input type="text" name="last-name" id="last-name">
+            </div>
+            <div class="form-group">
+                <label for="Email" class="names"> E-mail</label>
+                <input type="email" name="Email" id="Email">
+            </div>
+            <div class="form-group">
+                <label for="message" class="names"> Message </label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+
+        </fieldset>
+    </div>
 
 </body>
 </html>
